@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tiktok-scraper"
+version = "1.4.35"
+description = "TikTok scraper and downloader for Python"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Andrew Nord", email = "andrew.nord.flow@gmail.com" }]
+keywords = ["TikTok", "Scraper"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+tiktok-scraper = "tiktok_scraper.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tiktok_scraper*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

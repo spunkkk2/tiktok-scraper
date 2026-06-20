@@ -1,14 +1,18 @@
-coverage/
-examples/
-reverse_eng/
-node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .github/
+coverage/
+dist/
+build/
+*.egg-info/
+reverse_eng/
 garbage/
 
 .DS_Store
 *.csv
 *.zip
-ex.js
-ex.ts
 proxy
 bulk
